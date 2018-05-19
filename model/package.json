@@ -1,0 +1,19 @@
+{
+   "name": "magick_game_model",
+   "version": "0.0.1",
+   "description": "",
+   "devDependencies": {
+      "ts-node": "3.3.0",
+      "@types/node": "^8.0.29",
+      "typescript": "2.5.2"
+   },
+   "dependencies": {
+      "typeorm": "0.2.6",
+      "reflect-metadata": "^0.1.10",
+      "pg": "^7.3.0"
+   },
+   "scripts": {
+      "start": "ts-node src/index.ts",
+      "setup": "ts-node src/setup.ts"
+   }
+}
