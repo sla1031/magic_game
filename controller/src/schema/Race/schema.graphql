@@ -1,0 +1,17 @@
+
+
+type Race {
+	id: ID!
+	name: String
+	description: String
+	image: String
+}
+
+input raceInput {
+	name: String
+}
+
+type Query {
+	races: [Race]
+	race(input: raceInput): Race
+}

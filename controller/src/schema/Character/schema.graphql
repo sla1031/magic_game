@@ -1,0 +1,22 @@
+# import Race from "../Race/schema.graphql"
+# import Spell from "../Spell/schema.graphql"
+
+
+type Character {
+	id: ID!
+	name: String
+	health: Int
+	magicka: Int
+	image: String
+	race: Race
+	spells: [Spell]
+}
+
+input characterInput {
+	name: String
+}
+
+type Query {
+	characters: [Character]
+	character(input: characterInput): Character
+}

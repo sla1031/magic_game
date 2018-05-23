@@ -1,0 +1,18 @@
+
+
+type Spell {
+	id: ID!
+	name: String
+	description: String
+	image: String
+	damage: Int
+}
+
+input spellInput {
+	name: String
+}
+
+type Query {
+	spells: [Spell]
+	spell(input: spellInput): Spell
+}

@@ -1,0 +1,3 @@
+# import * from "Character/schema.graphql"
+# import * from "Race/schema.graphql"
+# import * from "Spell/schema.graphql"
