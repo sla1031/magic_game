@@ -15,8 +15,3 @@ type Character {
 input characterInput {
 	name: String
 }
-
-type Query {
-	characters: [Character]
-	character(input: characterInput): Character
-}

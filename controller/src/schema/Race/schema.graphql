@@ -10,8 +10,3 @@ type Race {
 input raceInput {
 	name: String
 }
-
-type Query {
-	races: [Race]
-	race(input: raceInput): Race
-}

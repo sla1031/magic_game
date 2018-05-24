@@ -7,12 +7,12 @@ import { RaceResolvers } from './Race/resolvers';
 import { SpellResolvers } from './Spell/resolvers';
 
 const typeDefs = importSchema(`src/schema/schema.graphql`);
-console.log('types', typeDefs);
+
 const resolvers = merge(
   CharacterResolvers,
-
+  RaceResolvers,
+  SpellResolvers,
 );
-
 // Put together a schema
 export const schema = makeExecutableSchema({
   typeDefs,

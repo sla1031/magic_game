@@ -13,11 +13,9 @@ export const RaceResolvers = {
        context: any,
        info: any,
      ): Promise<any> {
-        const connection = await getDefaultConnection();
-        const raceRepo = getCustomRepository(RaceRepository);
-        const races = raceRepo.find();
-
-        return races;
+       const connection = await getDefaultConnection();
+       const raceRepo = getCustomRepository(RaceRepository);
+       return raceRepo.find();
      }
    }
 };

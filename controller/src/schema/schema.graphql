@@ -1,3 +1,13 @@
 # import * from "Character/schema.graphql"
 # import * from "Race/schema.graphql"
 # import * from "Spell/schema.graphql"
+
+
+type Query {
+	characters: [Character]
+	character(input: characterInput): Character
+	races: [Race]
+	race(input: raceInput): Race
+	spells: [Spell]
+	spell(input: spellInput): Spell
+}

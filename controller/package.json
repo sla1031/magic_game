@@ -24,7 +24,6 @@
     "graphql-import": "^0.4.5",
     "graphql-tools": "^2.21.0",
     "lodash": "^4.17.10",
-    "magick_game_model": "file:../model",
     "pg": "^7.4.3",
     "reflect-metadata": "^0.1.12",
     "typeorm": "^0.2.6"

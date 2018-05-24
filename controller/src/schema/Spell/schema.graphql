@@ -11,8 +11,3 @@ type Spell {
 input spellInput {
 	name: String
 }
-
-type Query {
-	spells: [Spell]
-	spell(input: spellInput): Spell
-}
